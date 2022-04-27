@@ -27,6 +27,24 @@ BEtűszín: fekete
 Viktor
 Betűtípus: Times new roman, fekete
 */
+header {
+    background: #768376;
+}
+header > div.main-menu {
+    background: transparent;
+}
+#title {
+    min-width: 250px;
+}
+
+#bemutatkozas, #galeria {
+    background: #c7b3d4;
+    
+}
+
+#bemutatkozas  > .container, #kapcsolat  {
+    background: #fff5d2;
+}
 
 thead.center-pos > th {
     text-align: center;
@@ -63,9 +81,9 @@ section{
     background: transparent;
 }
 
- ul {
+ ul, li, .row {
 
-    background: #fff5d2;
+    background: transparent;
 }
 
 table.ownTable tbody tr { 

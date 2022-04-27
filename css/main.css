@@ -1,14 +1,16 @@
 :root {
     /* MAIN COLORS */
-    --main-color: #878586;
+     --main-color: #fff5d2;
+    /* #878586; */
     --dark-main-color: #3b3b3b;
-    --second-color: #f4f4f4;
+    --second-color: #fff5d2
 }
 
 * {
     padding: 0px;
     margin: 0px;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    /* sans-serif; */
     box-sizing: border-size;
     /* color: #333; */
 }
@@ -30,9 +32,9 @@ a {
     overflow: hidden;
 }
 
-header {
+/* header {
     background: var(--second-color);
-}
+} */
 
 .action-bar {
     padding-top: 1.25em;
@@ -73,6 +75,8 @@ header {
 
 .main-menu {
     background: var(--main-color);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .navbar-toggler-button:focus {
@@ -124,7 +128,8 @@ header {
 }
 
 .services-section {
-    background: url('../img/rendelo/rendelo.jpeg');
+    background: url('../img/terhes.png');
+    /* ../img/rendelo/rendelo.jpeg */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 40% 50%;
