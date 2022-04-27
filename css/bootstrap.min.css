@@ -402,7 +402,7 @@ body {
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
-    background-color: #fff
+    background-color: transparent;/* #fff*/
 }
 
 [tabindex="-1"]:focus {

@@ -56,10 +56,15 @@ table.ownTable thead th {
     min-width: 100px;
 }
 body {
-    background-color: #c7d3b4;
+    background-color: transparent;/*#c7d3b4;*/
 }
-section, ul {
-/* background-color: blueviolet; */
+section{
+
+    background: transparent;
+}
+
+ ul {
+
     background: #fff5d2;
 }
 
