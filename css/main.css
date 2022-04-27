@@ -1,0 +1,283 @@
+:root {
+    /* MAIN COLORS */
+    --main-color: #878586;
+    --dark-main-color: #3b3b3b;
+    --second-color: #f4f4f4;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-size;
+    /* color: #333; */
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+a {
+    color: #333 !important;
+}
+
+/* ========= HEADER, MENU ========= */
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+header {
+    background: var(--second-color);
+}
+
+.action-bar {
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#title {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.625em;
+    padding-left: 1.25em;
+}
+
+#title > span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.45em;
+    text-align: left;
+}
+
+.action-box > span {
+    text-transform: uppercase;
+}
+
+.action-box > h5 {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.main-menu {
+    background: var(--main-color);
+}
+
+.navbar-toggler-button:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.menu, .mobile-menu {
+    display: block;
+    overflow: hidden;
+    background: var(--main-color);
+}
+
+.menu-link {
+    margin-right: 1em;
+    text-decoration: none;
+    display: inline;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: lighter;
+    height: auto !important;
+}
+
+.menu-link:first-child {
+    padding-left: 0px;
+}
+
+/* .menu-link > span {
+    color: white;
+} */
+
+/* ========= SECTIONS ========= */
+
+.main-section {
+    background: url('../img/drolahviktor.jpg');/*rendelo.jpeg*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 40% 50%;
+        background-attachment: fixed;
+    left: 0;
+    bottom: 0;
+    flex-grow: 1;
+    position: relative;
+}
+
+.introduction-section {
+    font-size: 1.125em;
+}
+
+.services-section {
+    background: url('../img/rendelo/rendelo.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 40% 50%;
+        background-attachment: fixed;
+}
+
+.services-section-list {
+    background: var(--second-color);
+    border-radius: 2px;
+    height: 100%;
+    list-style-position: inside;
+    list-style-type: '';
+    text-align: left;
+}
+
+.services-section-list li {
+    font-size: 1.125em;
+    padding: 0.45em 0.315em;
+    margin: 0 1.562em;
+    display: list-item;
+}
+
+.services-section-list li:first-child {
+    padding-top: 1.562em;
+}
+
+.services-section-list li:last-child {
+    padding-bottom: 1.562em;
+}
+
+.services-section-list:before {
+    background: var(--main-color);
+    padding: 1.25em 1.562em;
+    display: block;
+    content: attr(data-title);
+    text-align: center;
+    font-size: 1.375em;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.slider-img {
+    height: 250px;
+    width: auto;
+    padding: 0px 20px !important;
+}
+
+#google-map {
+    height: 450px;
+}
+
+.contact-section-box i, .contact-section-box span {
+    font-size: 1.25em;
+}
+
+.contact-section-box span {
+    font-weight: 600;
+}
+
+.contact-section-box h5 {
+    font-size: 1.125em;
+    font-weight: 400;
+}
+
+/* =============== FOOTER =============== */
+
+footer {
+    background: var(--dark-main-color);
+    text-align: center;
+}
+
+footer #arrow-up {
+    display: block;
+    color: #fff;
+    font-size: 1.25em;
+    text-decoration: none;
+    padding-bottom: 0.625em;
+}
+
+footer #link-up {
+    color: #fff;
+    font-size: 1.125em;
+    text-decoration: none;
+}
+
+/* =============== 404 ERROR =============== */
+
+.error-container {
+    background: #f4f4f4;
+    padding: 5em;
+    border-radius: 2px;
+}
+
+.error-container h1 {
+    font-size: 4em;
+}
+
+.error-container a {
+    text-decoration: underline;
+}
+
+/* =============== MEDIA QUERIES =============== */
+
+@media only screen and (max-width: 1140px) {
+    .main-section,
+    .services-section {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    header {
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .main-section,
+    .services-section {
+        background-attachment: scroll;
+    }
+
+    .header-logo-wrapper img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #title {
+        font-size: 1.25em;
+    }
+
+    #title > span {
+        font-size: 0.625em;
+    }
+
+    #google-map {
+        height: 350px;
+    }
+
+    .error-container {
+        padding: 2em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+/* =============== SLICK JS =============== */
+
+.slick-prev:before,
+.slick-next:before {
+    color: #333 !important;
+}

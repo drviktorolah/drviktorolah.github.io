@@ -1,62 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bemutatkozás</title>
+<html lang="hu">
+    <head>
+        <title>Dr. Vass Géza Ádám</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
-<body>
-    <section id="ext_menu-0" data-rv-view="0">
+        <!-- =========== GENERAL META =========== -->
 
-        <nav style="background: #768376;" class="navbarown navbar-dropdown navbar-fixed-top">
-         <!-- navbar  navbar-fixed-top"> -->
-            <!-- <div class=""> -->
+        <meta charset="UTF-8">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-                <div style="background: transparent;" class="mbr-table mbr-table-cell container">
-                    <!-- <div class="mbr-table-cell"> -->
-                    <table class="ownTable mbr-table-cell">
-                        <thead>
-                            <th class="navbar-brand container">
-                                <a href="viktor.html" class="navbar-logo"><img
-                                        src="assets/images/drolahviktor-logo-white-139x128-38.png"
-                                        alt="Need a logo"></a>
-                                <a class="navbar-caption text-white" href="viktor.html">
-                                    Dr. Oláh Viktor <br>Szülész-Nőgyógyász szakorvos</a>
-                            </th>
-                            <th>
-                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
-                                     target="_blank"><span
-                                        data-hover="Előjegyzés">Előjegyzés</span></a>
-                                        <!-- href="https://drvassgezaadam.booked4.us" -->
-                            </th>
-                            <th>
-                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
-                                    href="#bemutatkozas"><span data-hover="Bemutatkozás">Bemutatkozás</span></a>
-                            </th>
-                            <th>
-                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
-                                    href="#szolgaltatasok"><span data-hover="Szolgáltatások">Szolgáltatások</span></a>
-                            </th>
-                            <th>
-                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
-                                    href="#arlista"><span data-hover="Árlista">Árlista</span></a>
-                            </th>
-                            <!-- <td><a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
-                                    href="#galeria"><span data-hover="Galéria">Galéria</span></a>
-                            </td> -->
-                            <th>
-                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
-                                    href="#kapcsolat"><span data-hover="Kapcsolat">Kapcsolat</span></a>
-                            </th>
-                        </thead>
-                    </table>
-                <!-- </div> -->
+        <!-- =========== META FOR FACEBOOK =========== -->
+
+        <meta property="og:title" content="Dr. Vass Géza Ádám"/>
+        <!--<meta property="og:description" content=""/>-->
+        <meta property="og:type" content="article"/>
+        <!-- <meta property="og:image" content="img/terhes.jpeg"/> -->
+        <meta property="og:image" content="drvassgezaadam.hu/img/rendelo/rendelo.jpeg"/>
+
+        <!-- =========== ICONS =========== -->
+
+        <!-- <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png"> -->
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/icon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+
+        <!-- =========== STYLE SHEETS =========== -->
+
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body style>
+        <div class="wrapper">
+            <header>
+                <div class="container action-bar">
+                    <div class="header-logo-wrapper">
+                        <img src="http://drviktorolah.github.io/img/icon/mainIcon.png" alt="Logo">
+                        <!-- src="http://www.drvassgezaadam.hu/img/logo.svg" -->
+                        <!-- -példa -->
+                        <h1 id="title">Dr. Oláh Viktor<span>Szülész-nőgyógyász szakorvos</span></h1>
+                    </div>
+                    <div class="action-box d-none d-md-block">
+                        <i class="far fa-building"></i>
+                        <span>Cím</span>
+                        <h5>Kecskemét, Frangepán sétány 3</h5>
+                    </div>
+                </div>
+                <div class="main-menu">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler navbar-toggler-button border-0 ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                                <i class="fas fa-bars text-white"></i>
+                            </button>
+                            <div class="collapse navbar-collapse menu text-uppercase cl-effect-5" id="navbarNav">
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" href="https://drvassgezaadam.booked4.us" target="_blank"><span data-hover="Előjegyzés">Előjegyzés</span></a>
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" href="#bemutatkozas"><span data-hover="Bemutatkozás">Bemutatkozás</span></a>
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" href="#szolgaltatasok"><span data-hover="Szolgáltatások">Szolgáltatások</span></a>
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" href="#galeria"><span data-hover="Galéria">Galéria</span></a>
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" href="#kapcsolat"><span data-hover="Kapcsolat">Kapcsolat</span></a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <section class="main-section"></section>
+        </div>
+
+        <section id="bemutatkozas" class="py-5 introduction-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-12 text-justify">
+                        <p>Üdvözlöm,</p>
+                        <p>
+                            Dr. Vass Géza Ádám vagyok, szülész-nőgyógyász szakorvos. 2014-ben szereztem diplomámat a Semmelweis Egyetem Általános Orvostudományi karán.
+                            2014 szeptembere óta a Bács-Kiskun Megyei Oktatókórház Szülészet-Nőgyógyászati Osztályán dolgozom.
+                            2019-ben sikeres szakvizsgát tettem szülészet-nőgyógyászatból, kiválóan megfelelt minősítéssel.
+                            Mindennapi munkám során igyekszem a kor elvárásainak megfelelő legkorszerűbb,  leghatékonyabb, legbiztonságosabb terápiás megoldásokat alkalmazni, folyamatosan arra törekszem, hogy betegeim számára a lehető legjobb körülmények között, a lehető legmagasabb színvonalú ellátást biztosítsam.
+                            Szeretettel várom kedves pácienseimet kecskeméti magánrendelésemen, kellemes hangulatú, modern környezetben, teljeskörű szülészeti és nőgyógyászati ellátással.<br/>
+                        </p>
+                        <p>Dr. Vass Géza Ádám</p>
+                    </div>
+                </div>
             </div>
-        </nav>
+        </section>
 
-    </section>
-</body>
+        <section id="szolgaltatasok" class="py-5 services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-5 mb-md-0">
+                        <ul class="services-section-list" data-title="Szülészeti tevékenység">
+                            <li>Gyermekvállalás előtti tanácsadás, kivizsgálás</li>
+                            <li>Teljes körű meddőségi kivizsgálás, in vitro fertilizáció előtti kivizsgálás</li>
+                            <li>Várandósgondozás, terhességi ultrahang vizsgálat</li>
+                            <li>Szülésre történő felkészítés, szülésvezetés</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <ul class="services-section-list" data-title="Nőgyógyászati tevékenység">
+                            <li>Nőgyógyászati vizsgálat</li>
+                            <li>Nőgyógyászati ultrahang vizsgálat</li>
+                            <li>Méhnyakrákszűrés</li>
+                            <li>HPV-tipizálás</li>
+                            <li>Fogamzásgátlási tanácsadás, méhen belüli eszköz (IUD) felhelyezés, ellenőrzés, levétel</li>
+                            <li>Vérzészavarok, myomák kezelése</li>
+                            <li>Endometriosis kivizsgálás</li>
+                            <li>Kismedencei fájdalom, kismedencei gyulladás kivizsgálása</li>
+                            <li>Policystás ovarium syndroma (PCOS) kivizsgálás</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="szolgaltatasokViktor0" class="py-5 services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-5 mb-md-0">
+                        <ul class="services-section-list" data-title="Szülészeti tevékenység">
+                            <li>Családtervezés előtti tanácsadás, szűrővizsgálatok</li>
+                            <li>Meddőségi kivizsgálás/kezelés</li>
+                            <li>Várandósgondozás</li>
+                            <li>Szülészeti betegségek kezelése</li>
+                            <li>Szülészeti UH vizsgálat</li>
+                            <li>Babamozi</li>
+                            <li>Szülésre való felkészítés</li>
+                            <li>Szülés utáni vizsgálat</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <ul class="services-section-list" data-title="Nőgyógyászati tevékenység">
+                            <li>Méhnyakszűrés</li>
+                            <li>HPV meghatározás</li>
+                            <li>Nőgyógyászati vizsgálat</li>
+                            <li>Tenyésztéses vizsgálatok</li>
+                            <li>Fogamzásgátlási tanácsadás</li>
+                            <li>Méhen belüli eszköz felhelyezés, levétel</li>
+                            <li>Vérzészavarok kivizsgálása/kezelése</li>
+                            <li>Nőgyógyászati betegségek kivizsgálása/kezelése</li>
+                            <li>Változókori panaszok tanácsadása/kezelése</li>
+                            <li>Nőgyógyászati ultrahang vizsgálat</li>
+                            <li>Medencefenék süllyedéses panaszok kivizsgálása/kezelése</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="szolgaltatasokViktor" class="py-5 services-section">
+            <!-- class="py-5 services-section" -->
+            <div class="container">
+                <!-- <div class="row"> -->
+                    <table class="row">
+                        <tbody class="col-12 col-md-6 mb-5 mb-md-0">
+                    <td style="vertical-align: top;">
+                        <ul class="services-section-list" data-title="Szülészeti tevékenység">
+                            <li>Családtervezés előtti tanácsadás, szűrővizsgálatok</li>
+                            <li>Meddőségi kivizsgálás/kezelés</li>
+                            <li>Várandósgondozás</li>
+                            <li>Szülészeti betegségek kezelése</li>
+                            <li>Szülészeti UH vizsgálat</li>
+                            <li>Babamozi</li>
+                            <li>Szülésre való felkészítés</li>
+                            <li>Szülés utáni vizsgálat</li>
+                            <!-- <li>Gyermekvállalás előtti tanácsadás, kivizsgálás</li>
+                            <li>Teljes körű meddőségi kivizsgálás, in vitro fertilizáció előtti kivizsgálás</li>
+                            <li>Várandósgondozás, terhességi ultrahang vizsgálat</li>
+                            <li>Szülésre történő felkészítés, szülésvezetés</li> -->
+                        </ul>
+                    </td>
+                    <td >
+                        <ul class="services-section-list" data-title="Nőgyógyászati tevékenység">
+                            <li>Méhnyakszűrés</li>
+                            <li>HPV meghatározás</li>
+                            <li>Nőgyógyászati vizsgálat</li>
+                            <li>Tenyésztéses vizsgálatok</li>
+                            <li>Fogamzásgátlási tanácsadás</li>
+                            <li>Méhen belüli eszköz felhelyezés, levétel</li>
+                            <li>Vérzészavarok kivizsgálása/kezelése</li>
+                            <li>Nőgyógyászati betegségek kivizsgálása/kezelése</li>
+                            <li>Változókori panaszok tanácsadása/kezelése</li>
+                            <li>Nőgyógyászati ultrahang vizsgálat</li>
+                            <li>Medencefenék süllyedéses panaszok kivizsgálása/kezelése</li>
+                            <!-- <li>Nőgyógyászati vizsgálat</li>
+                            <li>Nőgyógyászati ultrahang vizsgálat</li>
+                            <li>Méhnyakrákszűrés</li>
+                            <li>HPV-tipizálás</li>
+                            <li>Fogamzásgátlási tanácsadás, méhen belüli eszköz (IUD) felhelyezés, ellenőrzés, levétel</li>
+                            <li>Vérzészavarok, myomák kezelése</li>
+                            <li>Endometriosis kivizsgálás</li>
+                            <li>Kismedencei fájdalom, kismedencei gyulladás kivizsgálása</li>
+                            <li>Policystás ovarium syndroma (PCOS) kivizsgálás</li> -->
+                        </ul>
+                    </td>
+                </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="galeria" class="py-5">
+            <div class="container">
+                <div class="regular slider">
+                    <div>
+                        <img class="slider-img mx-auto" src="img/rendelo/rendelo_bejarat.jpg" alt="Rendelő bejárat">
+                    </div>
+                    <div>
+                        <img class="slider-img mx-auto" src="img/rendelo/varo1.jpg" alt="Váró">
+                    </div>
+                    <div>
+                        <img class="slider-img mx-auto" src="img/rendelo/varo2.jpg" alt="Váró">
+                    </div>
+                    <div>
+                        <img class="slider-img mx-auto" src="img/rendelo/vizsgalo1.jpg" alt="Vizsgáló">
+                    </div>
+                    <div>
+                        <img class="slider-img mx-auto" src="img/rendelo/vizsgalo2.jpg" alt="Vizsgáló">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="galeria" class="py-5">
+            <div class="container">
+                <div class="regular slider">
+                    <div>
+                        <img class="slider-img mx-auto" src="img/terhes.png" alt="Rendelő bejárat">
+                    </div>
+                    <div>
+                        <img class="slider-img mx-auto" src="img/1.jpg" alt="Váró">
+                    </div>
+                    <div>
+                        <img class="slider-img mx-auto" src="img/4.jpg" alt="Váró">
+                    </div>
+                    <div>
+                        <img class="slider-img mx-auto" src="img/5.jpg" alt="Vizsgáló">
+                    </div>
+                    <div>
+                        <img class="slider-img mx-auto" src="img/2.jpg" alt="Vizsgáló">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kapcsolat" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                        <iframe id="google-map" class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10902.493683109771!2d19.6965382!3d46.910124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45fb912e20ed68ba!2zRHIuIFZhc3MgR8OpemEgw4Fkw6FtIHN6w7xsw6lzei1uxZFnecOzZ3nDoXN6IHN6YWtvcnZvcw!5e0!3m2!1shu!2shu!4v1584628297106!5m2!1shu!2shu" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="contact-section-box mb-3 text-center text-lg-left">
+                            <i class="far fa-building"></i>
+                            <span class="text-uppercase">Cím</span>
+                            <h5>Kecskemét, Frangepán sétány 3</h5>
+                        </div>
+                        <div class="contact-section-box text-center text-lg-left">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span class="text-uppercase">Telefonszám</span>
+                            <h5><a href="tel:+36304069789">+3630/406-9789</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kapcsolatViktor" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                        <iframe id="google-map" class="w-100"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2726.373783694268!2d19.651531088244017!3d46.895366866301245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743d08483bc2687%3A0x8d98ad72c8bb92e3!2zS2Vjc2tlbcOpdCwgU3rDvHJldCB1LiAxLCA2MDAw!5e0!3m2!1shu!2shu!4v1650019394024!5m2!1shu!2shu"
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="contact-section-box mb-3 text-center text-lg-left">
+                            <i class="far fa-building"></i>
+                            <span class="text-uppercase">Cím</span>
+                            <h5>Kecskemét, Szüret utca 1.</h5>
+                        </div>
+                        <div class="contact-section-box text-center text-lg-left">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span class="text-uppercase">Telefonszám</span>
+                            <h5><a href="tel:+36703357862">+3670/335-7862</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-4">
+            <div class="container">
+                <a href="#" id="link-up" class="text-white"><i class="fas fa-arrow-up" id="arrow-up"></i>Vissza az oldal tetejére</a>
+            </div>
+        </footer>
+
+        <!-- =========== SCRIPTS =========== -->
+
+        <script src="https://kit.fontawesome.com/8092011003.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.js"></script>
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/gallery.js"></script>
+        <script type="text/javascript" src="js/smoothScroll.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
 </html>

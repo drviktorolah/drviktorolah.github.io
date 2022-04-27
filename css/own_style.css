@@ -1,0 +1,95 @@
+/* a.text-white {
+    color:  white;
+} */
+/*
+https://icolorpalette.com/color/c7d3b4
+Viktor
+Viktor Olah
+háttér
+H 19:52
+Viktor
+Viktor Olah
+írás kerete
+Viktor
+Viktor Olah
+Viktor visszavont egy üzenetet.
+Viktor
+https://icolorpalette.com/color/FFF5D2
+Viktor
+Viktor Olah
+a fejléc pedig
+Viktor
+Viktor Olah
+https://icolorpalette.com/color/768376
+Viktor
+Viktor Olah
+BEtűszín: fekete
+Viktor
+Betűtípus: Times new roman, fekete
+*/
+
+thead.center-pos > th {
+    text-align: center;
+}
+
+table.ownTable tbody tr td {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    vertical-align:middle;
+    min-height: 100px;
+}
+
+/* .menu-link {
+    color: black;
+} */
+
+.menu-link > span {
+    color: black;
+}
+
+
+table.ownTable thead th {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    min-width: 100px;
+}
+body {
+    background-color: #c7d3b4;
+}
+section, ul {
+/* background-color: blueviolet; */
+    background: #fff5d2;
+}
+
+table.ownTable tbody tr { 
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+div {
+    background-color: transparent;
+    /* aqua; */
+}
+
+section#ext-menu {
+    background-color: #768376;
+    color: black;
+    position: fixed;
+}
+
+/* nav.navbarown {
+    
+    color: rgb(118,131,118) 
+} */
+
+nav div.mbr-table {
+    background-color:  rgb(118,131,118);
+}
+
+p, li, a {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
