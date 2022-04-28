@@ -27,7 +27,7 @@ BEtűszín: fekete
 Viktor
 Betűtípus: Times new roman, fekete
 */
-header {
+header, footer {
     background: #768376;
 }
 header > div.main-menu {
