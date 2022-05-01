@@ -112,7 +112,7 @@ a {
 /* ========= SECTIONS ========= */
 
 .main-section {
-    background: url('../img/terhes.png');/*rendelo.jpeg*/
+    background: url('../img/drolahviktor.jpg');/*rendelo.jpeg*/
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 40% 50%;
@@ -128,7 +128,7 @@ a {
 }
 
 .services-section {
-    background: url('../img/drolahviktor.jpg');
+    background: url('../img/terhes.png');
     /* ../img/rendelo/rendelo.jpeg */
         background-repeat: no-repeat;
         background-size: cover;
