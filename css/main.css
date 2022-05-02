@@ -112,7 +112,7 @@ a {
 /* ========= SECTIONS ========= */
 
 .main-section {
-    background: url('../img/drolahviktor.jpg');/*rendelo.jpeg*/
+    background: url('../img/terhes.png');/*rendelo.jpeg*/
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 40% 50%;
@@ -126,15 +126,18 @@ a {
 .introduction-section {
     font-size: 1.125em;
 }
-
 .services-section {
+    background: transparent;
+}
+/* 
+    
     background: url('../img/terhes.png');
-    /* ../img/rendelo/rendelo.jpeg */
+     ../img/rendelo/rendelo.jpeg 
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 40% 50%;
         background-attachment: fixed;
-}
+} */
 
 .services-section-list {
     background: var(--second-color);

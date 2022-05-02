@@ -37,7 +37,7 @@ header > div.main-menu {
     min-width: 250px;
 }
 
-section#bemutatkozas, section#galeria, a#nevmezo {
+section#bemutatkozas, section#galeria, a#nevmezo, section.services-section {
     background: #c7d3b4;
     padding-left: 5px;
     padding-right: 5px;
