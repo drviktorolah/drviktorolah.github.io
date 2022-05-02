@@ -115,5 +115,7 @@ nav div.mbr-table {
 
 p, li, a {
     font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-stretch: normal;
     color: black;
 }
