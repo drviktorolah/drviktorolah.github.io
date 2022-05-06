@@ -27,6 +27,20 @@ BEtűszín: fekete
 Viktor
 Betűtípus: Times new roman, fekete
 */
+/* element.style {
+    display: block;
+    -webkit-user-select: none;
+    margin: auto;
+    cursor: zoom-out;
+    background-color: hsl(0, 0%, 90%);
+    transition: background-color 300ms;
+}
+img {
+    width: 800px;
+    aspect-ratio: auto 800 / 600;
+    height: 600px;
+} */
+
 header, footer {
     background: #768376;
 }
