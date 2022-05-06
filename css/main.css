@@ -126,9 +126,9 @@ a {
 .introduction-section {
     font-size: 1.125em;
 }
-.services-section {
+/* .services-section {
     background: transparent;
-}
+} */
 /* 
     
     background: url('../img/terhes.png');
@@ -175,12 +175,18 @@ a {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 }
+/* img.slider-img.mx-auto {
+     height: 250px; 
+    object-fit: fill;
+     padding: 0px 15px !important;  
+} */
 
-.slider-img {
+/* .slider-img {
     height: 250px;
-    width: auto;
-    padding: 0px 20px !important;
-}
+     width: auto; 
+    object-fit: contain;
+     padding: 0px 20px !important; 
+} */
 
 #google-map {
     height: 450px;

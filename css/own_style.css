@@ -41,6 +41,10 @@ img {
     height: 600px;
 } */
 
+img.slider-img.mx-auto {
+    object-fit: contain;
+}
+
 header, footer {
     background: #768376;
 }
@@ -51,7 +55,7 @@ header > div.main-menu {
     min-width: 250px;
 }
 
-section#bemutatkozas, a#nevmezo, section.services-section {
+section#bemutatkozas, a#nevmezo, section/*.services-section*/ {
     background: #c7d3b4;
     /* padding-left: 5px;
     padding-right: 5px; */
@@ -63,6 +67,10 @@ section#bemutatkozas, a#nevmezo, section.services-section {
 
 thead.center-pos > th {
     text-align: center;
+}
+
+table.ownTable {
+    position: relative;
 }
 
 table.ownTable tbody tr td {
@@ -91,10 +99,10 @@ table.ownTable thead th {
 body {
     background-color: transparent;/*#c7d3b4;*/
 }
-section{
+/* section{
 
     background: transparent;
-}
+} */
 
  ul, li, .row {
 

@@ -75,9 +75,10 @@
 </head>
 
 <body style>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit -->
     <div class="wrapper">
         <header>
-            <div class="container action-bar">
+            <div class="container action-bar" style="flex-wrap: wrap;">
                 <div class="header-logo-wrapper">
                     <img src="img/icon/mainIcon.png" style="height: 64px; width: 64px;" alt="Logo">
                     <h1 id="title">Dr. Oláh Viktor<span>Szülész-nőgyógyász szakorvos</span></h1>
@@ -229,23 +230,53 @@
         </div>
     </section>
 
+    <section id="arlista" class="py-5 introduction-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="services-section-list" data-title="Árlista">
+                        <table class="ownTable">
+                            <thead>
+                                <th>Kezelés</th>
+                                <th> Díj</th>
+                                <th>Időtartam</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> Nőgyógyászati vizsgálat </td>
+                                    <td> 18 000 Ft</td>
+                                    <td> 15 perc </td>
+                                </tr>
+                                <tr>
+                                    <td> Nőgyógyászati vizsgálat <br> + méhnyakszűrés </td>
+                                    <td> 20 000 Ft</td>
+                                    <td> 20 perc </td>
+                                </tr>
+                                <tr>
+                                    <td> Várandósgondozás </td>
+                                    <td> 20 000 Ft</td>
+                                    <td> 20 perc </td>
+                                </tr>
+                                <tr>
+                                    <td> Várandósgondozás + Babamozi</td>
+                                    <td> 30 000 Ft</td>
+                                    <td> 25 perc </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <section id="galeria" class="mbr-gallery mbr-section mbr-section-nopadding mbr-slider-carousel" data-filter="false"
         style="padding-top: 3rem; padding-bottom: 3rem;background: #c7d3b4;
         padding: 24px 0px">
-        <!-- mbr-gallery mbr-section mbr-section-nopadding mbr-slider-carousel" -->
-        <!-- style="background-color: rgb(144, 168, 120); padding-top: 3rem; padding-bottom: 3rem;" -->
-        <!-- data-rv-view="40" -->
+
         <!-- <section id="galeria" class="py-5"> -->
         <div class="mbr-gallery-row">
             <div class=" mbr-gallery-layout-default">
-                <!-- <div class="regular slider"> -->
-                <!-- mbr-gallery-row" -->
-                <!-- <div class=" mbr-gallery-layout-default"> -->
-                <!-- <div class="regular slider"> -->
-                <!-- <div>
-                        <img class="slider-img mx-auto" src="img/terhes.png" alt="Rendelő bejárat">
-                    </div> -->
-                <!-- mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Beautiful" data-video-url="false" -->
+               
                 <div>
                     <div>
                         <div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1"
@@ -301,17 +332,11 @@
                                 <span class="icon-focus"></span>
                             </div>
                         </div>
-                        <div class="clearfix"></div>
-                        <!-- 
-                <div class="mbr-gallery-item mbr-gallery-item__mobirise3 mbr-gallery-item--p1" data-tags="Beautiful" data-video-url="false"> -->
-                        <!-- </div> -->
-                        <!-- </div> -->
+                        <div class="clearfix"></div>                      
                     </div>
                 </div>
             </div>
-            <!-- </div> -->
-            <!-- </div> -->
-
+         
             <!-- Lightbox -->
             <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1"
                 data-keyboard="true" data-interval="false" id="lb-gallery3-4y">
@@ -372,28 +397,6 @@
             </div>
     </section>
 
-    <!-- <section id="kapcsolat" class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-                        <iframe id="google-map" class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10902.493683109771!2d19.6965382!3d46.910124!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x45fb912e20ed68ba!2zRHIuIFZhc3MgR8OpemEgw4Fkw6FtIHN6w7xsw6lzei1uxZFnecOzZ3nDoXN6IHN6YWtvcnZvcw!5e0!3m2!1shu!2shu!4v1584628297106!5m2!1shu!2shu" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="contact-section-box mb-3 text-center text-lg-left">
-                            <i class="far fa-building"></i>
-                            <span class="text-uppercase">Cím</span>
-                            <h5>Kecskemét, Frangepán sétány 3</h5>
-                        </div>
-                        <div class="contact-section-box text-center text-lg-left">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span class="text-uppercase">Telefonszám</span>
-                            <h5><a href="tel:+36304069789">+3630/406-9789</a></h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
     <section id="kapcsolat" class="py-5">
         <div class="container">
             <div class="row">
@@ -406,13 +409,15 @@
                 <div class="col-12 col-lg-6">
                     <div class="contact-section-box mb-3 text-center text-lg-left">
                         <i class="far fa-building"></i>
-                        <span class="text-uppercase">Cím</span>
+                        <span class="text-uppercase">Cím:</span>
                         <h5>Kecskemét, Szüret utca 1.</h5>
                     </div>
                     <div class="contact-section-box text-center text-lg-left">
                         <i class="fas fa-mobile-alt"></i>
-                        <span class="text-uppercase">Telefonszám</span>
-                        <h5><a href="tel:+36703357862">+3670/335-7862</a></h5>
+                        <span class="text-uppercase">Tel.:</span>
+                        <h5><a>+3670/335-7862</a></h5>
+                        <span class="text-uppercase">E-mail:</span>
+                        <h5><a>viktorolah2@outlook.com</a></h5>
                     </div>
                 </div>
             </div>
