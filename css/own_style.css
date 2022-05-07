@@ -149,6 +149,11 @@ div.container.action-bar{
     padding: 0px 15px 0px;
 }
 
+#navbarNav > div /*> a > span*/ {
+    /* text-align: center; */
+    /* background-color: aqua; */
+    text-align: center;
+}
 /* nav.navbarown {
     
     color: rgb(118,131,118) 
