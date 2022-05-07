@@ -144,6 +144,11 @@ section#ext-menu {
     position: fixed;
 }
 
+div.container.action-bar{
+    margin: 0px 30px;
+    padding: 0px 15px 0px;
+}
+
 /* nav.navbarown {
     
     color: rgb(118,131,118) 
