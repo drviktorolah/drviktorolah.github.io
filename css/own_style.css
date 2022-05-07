@@ -40,6 +40,13 @@ img {
     aspect-ratio: auto 800 / 600;
     height: 600px;
 } */
+img {
+    width: 1200px;
+}
+/* div.modal-dialog {
+    width: 1200px;
+    top: 50px;
+} */
 
 img.slider-img.mx-auto {
     object-fit: contain;
