@@ -77,9 +77,13 @@
 
 <body style>
     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit -->
-    <div class="wrapper">
-        <header>
-            <div class="container action-bar" style="flex-wrap: wrap;">
+    <!-- <section style="height: 100px;">
+
+    </section> -->
+    <section class="py-5 own-top" style="position:relative;z-index: 1;">
+        <div class="wrapper" style="max-height: 70px;">
+
+            <div class="container action-bar own-top-inner" style="flex-wrap: wrap; position: fixed;">
                 <div class="header-logo-wrapper">
                     <img src="img/icon/mainIcon.png" style="height: 64px; width: 64px;" alt="Logo">
                     <h1 id="title">Dr. Oláh Viktor<span>Szülész-nőgyógyász szakorvos</span></h1>
@@ -90,18 +94,18 @@
                         <h5>Kecskemét, Szüret utca 1</h5>
                     </div> -->
 
-                <div class="main-menu" style="padding-right : 5px;">
+                <!-- <div class="main-menu" style="padding-right : 5px;">
                     <div class="container">
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <button class="navbar-toggler navbar-toggler-button border-0 ml-auto" type="button"
                                 data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                                 aria-expanded="false">
                                 <i class="fas fa-bars text-white"></i>
-                            </button>
-                            <div class="collapse navbar-collapse menu text-uppercase cl-effect-5" id="navbarNav"
+                            </button> -->
+                <!-- <div class="collapse navbar-collapse menu text-uppercase cl-effect-5" id="navbarNav"
                                 style="margin-right: 0.5rem;">
-                                <!-- <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" target="_blank"><span data-hover="Előjegyzés">Előjegyzés</span></a> -->
-                                <!-- href="" -->
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" target="_blank"><span data-hover="Előjegyzés">Előjegyzés</span></a>
+                                
                                 <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
                                     href="#bemutatkozas"><span data-hover="Bemutatkozás">Bemutatkozás</span></a>
                                 <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
@@ -110,51 +114,81 @@
                                     href="#galeria"><span data-hover="Galéria">Galéria</span></a>
                                 <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
                                     href="#kapcsolat"><span data-hover="Kapcsolat">Kapcsolat</span></a>
-                            </div>
-                        </nav>
+                            </div> -->
+                <!-- </nav>
                     </div>
-                </div>
+                </div> -->
             </div>
-        </header>
-        <section
-            class="main-section mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-after-navbar"
-            id="header4-23" data-rv-view="31" style="background-image: url(img/varandos3.jpg);">
-            <!-- style="background-image: url(assets/images/terhes-1000x500.jpg);" -->
-            <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(0, 0, 0);"></div>
 
-            <div class="mbr-table-cell">
-                <div class="container">
-                    <div class="row">
-                        <div class="mbr-section col-md-10" style="padding: 120px 15px 60px;">
+        </div>
+    </section>
+    <section class="py-5 main-section mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-after-navbar"
+        id="header4-23" data-rv-view="31" >
+        <!-- style="background-image: url(img/varandos3.jpg);" -->
+        <!-- style="background-image: url(assets/images/terhes-1000x500.jpg);" -->
+        <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(0, 0, 0);"></div>
 
-                            <h1 class="mbr-section-title display-1" style="color: white; font-weight: bold; font-size: 50px;
+        <div class="mbr-table-cell">
+            <div class="container">
+                <div class="row">
+                    <div class="mbr-section col-md-10" style="padding: 120px 15px 60px;">
+
+                        <h1 class="mbr-section-title display-1" style="color: white; font-weight: bold; font-size: 50px;
                         font-family: sans-serif;">
-                                Dr. Oláh Viktor</h1>
-                            <p class="mbr-section-lead lead" style="color: white;font-weight: bold;">szülész-nőgyógyász
-                            </p>
-                            <div class="mbr-section-btn">
-                                <a id="nevmezo"
-                                    class="btn btn-lg menu-link my-1 d-block d-lg-inline text-center text-lg-left"
-                                    href="#bemutatkozas">
-                                    <span
-                                        style="text-align: center; color: white;font-weight: bold;font-family: sans-serif; padding-left: 15px;"
-                                        data-hover="Bemutatkozás">Bemutatkozás</span></a>
+                            Dr. Oláh Viktor</h1>
+                        <p class="mbr-section-lead lead" style="color: white;font-weight: bold;">szülész-nőgyógyász
+                        </p>
+                        <div class="mbr-section-btn">
+                            <a id="nevmezo"
+                                class="btn btn-lg menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                href="#bemutatkozas">
+                                <span
+                                    style="text-align: center; color: white;font-weight: bold;font-family: sans-serif; padding-left: 15px;"
+                                    data-hover="Bemutatkozás">Bemutatkozás</span></a>
+
+                            <div class="main-menu" style="padding-right : 5px;">
+                                <div class="container">
+                                    <nav class="navbar navbar-expand-lg navbar-light">
+                                        <button class="navbar-toggler navbar-toggler-button border-0 ml-auto"
+                                            type="button" data-toggle="collapse" data-target="#navbarNav"
+                                            aria-controls="navbarNav" aria-expanded="false">
+                                            <i class="fas fa-bars text-white"></i>
+                                        </button>
+                                        <div class="collapse navbar-collapse menu text-uppercase cl-effect-5"
+                                            id="navbarNav" style="margin-right: 0.5rem;">
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                target="_blank"><span data-hover="Előjegyzés">Előjegyzés</span></a>
+
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                href="#bemutatkozas"><span
+                                                    data-hover="Bemutatkozás">Bemutatkozás</span></a>
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                href="#szolgaltatasok"><span
+                                                    data-hover="Szolgáltatások">Szolgáltatások</span></a>
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                href="#galeria"><span data-hover="Galéria">Galéria</span></a>
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                href="#kapcsolat"><span data-hover="Kapcsolat">Kapcsolat</span></a>
+                                        </div>
+                                    </nav>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <!-- </div> -->
 
     <section id="bemutatkozas" class="py-5 introduction-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12">
                     <!-- text-justify -->
-                    <p style="margin-top: 0.4rem">
+                    <p style="margin-top: 0.4rem; text-align: justify; ">
                         <img src="img/rendelo/drolahviktor2.jpg" width="320px"
-                            style="display: inline; float: left; margin-right:  .5rem;" />
+                            style="display: inline; float: left; margin-right:  .5rem; " />
                         Üdvözlöm,
                         Dr. Oláh Viktornak hívnak. 1990.12.25-én születtem Kecskeméten. Középiskolai éveimet Petőfi
                         Sándor Evangélikus Gimnázium és Szakgimnáziumban töltöttem, ahol 2009-ben kiváló minősítéssel
@@ -234,18 +268,21 @@
     <section id="bemutatkozas" class="py-5 introduction-section">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-12">
-    Időpontfoglalás: Az időpontokat az időpontfoglalás menüpontnál találja. A listából ki kell választania a megfelelő vizsgálatot. Minden hónap 20-án nyitom meg délután 17 órakor a következő havi szabad helyeket. Amennyiben sürgős vizsgálatra van szükséges az elektronikus felületeken legyen szíves kapcsolatba lépni velem, és egyeztetünk egy soron kívüli vizsgálat szükségességéről.
-</div>  
-</div>
-</div>
-</section>
+                <div class="col-12 col-lg-12" style="text-align: justify;">
+                    Időpontfoglalás: Az időpontokat az időpontfoglalás menüpontnál találja. A listából ki kell
+                    választania a megfelelő vizsgálatot. Minden hónap 20-án nyitom meg délután 17 órakor a következő
+                    havi szabad helyeket. Amennyiben sürgős vizsgálatra van szükséges az elektronikus felületeken legyen
+                    szíves kapcsolatba lépni velem, és egyeztetünk egy soron kívüli vizsgálat szükségességéről.
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="py-5 introduction-section">
         <div class="container">
             <div class="row">
-                <div id="rendelesiido" class="col-12 col-md-6 mb-5 mb-md-0">
-                    <div class="services-section-list" data-title="Rendelési idő">
-                        <table class="ownTable">
+                <div id="rendelesiido" class="col-12 col-md-4 mb-5 mb-md-0">
+                    <div class="services-section-list" data-title="Rendelés">
+                        <table class="ownTable" style="margin: 15px;">
                             <thead>
                                 <th></th>
                                 <th>de</th>
@@ -265,9 +302,9 @@
                         </table>
                     </div>
                 </div>
-                <div id="arlista" class="col-12 col-md-6">
+                <div id="arlista" class="col-12 col-md-8">
                     <div class="services-section-list" data-title="Árlista">
-                        <table class="ownTable" style="margin-bottom: 10px;">
+                        <table class="ownTable" style="margin: 15px;">
                             <thead>
                                 <th>Kezelés</th>
                                 <th> Díj</th>

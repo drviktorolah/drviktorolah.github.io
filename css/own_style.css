@@ -55,7 +55,22 @@ header > div.main-menu {
     min-width: 250px;
 }
 
-section#bemutatkozas, a#nevmezo, section/*.services-section*/ {
+section.own-top{
+    background: #c7d3b4;
+}
+
+div.wrapper {
+    background: #c7d3b4;
+    /* position: absolute; */
+    /* z-index: 1; */
+}
+
+div.own-top-inner {
+    background: #c7d3b4;
+    /* width: fit-content; */
+}
+
+section#bemutatkozas, a#nevmezo, section, section.own-section /*.services-section*/ {
     background: #c7d3b4;
     /* padding-left: 5px;
     padding-right: 5px; */
@@ -67,18 +82,21 @@ section#bemutatkozas, a#nevmezo, section/*.services-section*/ {
 
 thead.center-pos > th {
     text-align: center;
+    padding-bottom: .5em;
 }
 
 table.ownTable {
     position: relative;
+    margin: 15px;
 }
 
 table.ownTable tbody tr td {
-    padding-left: 5px;
+    padding-left: 8px;
     padding-right: 5px;
     text-align: center;
     vertical-align:middle;
-    min-height: 100px;
+    min-height: 200px;
+    padding-bottom: .5em;
 }
 
 /* .menu-link {
@@ -91,10 +109,10 @@ table.ownTable tbody tr td {
 
 
 table.ownTable thead th {
-    padding-left: 5px;
+    padding-left: 8px;
     padding-right: 5px;
     text-align: center;
-    min-width: 100px;
+    min-width: 50px;
 }
 body {
     background-color: transparent;/*#c7d3b4;*/
@@ -111,7 +129,7 @@ body {
 
 table.ownTable tbody tr { 
     margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;    
 }
 
 
