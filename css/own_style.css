@@ -50,17 +50,20 @@ img.slider-img.mx-auto {
     object-fit: contain;
 }
 
-header, footer {
+header,
+footer {
     background: #768376;
 }
-header > div.main-menu {
+
+header>div.main-menu {
     background: transparent;
 }
+
 #title {
     min-width: 250px;
 }
 
-section.own-top{
+section.own-top {
     background: #c7d3b4;
 }
 
@@ -75,17 +78,24 @@ div.own-top-inner {
     /* width: fit-content; */
 }
 
-section#bemutatkozas, a#nevmezo, section, section.own-section /*.services-section*/ {
+section#bemutatkozas,
+a#nevmezo,
+section,
+section.own-section
+
+/*.services-section*/
+    {
     background: #c7d3b4;
     /* padding-left: 5px;
     padding-right: 5px; */
 }
 
-#bemutatkozas  > .container, #kapcsolat  {
+#bemutatkozas>.container,
+#kapcsolat {
     background: #fff5d2;
 }
 
-thead.center-pos > th {
+thead.center-pos>th {
     text-align: center;
     padding-bottom: .5em;
 }
@@ -99,7 +109,7 @@ table.ownTable tbody tr td {
     padding-left: 8px;
     padding-right: 5px;
     text-align: center;
-    vertical-align:middle;
+    vertical-align: middle;
     min-height: 200px;
     padding-bottom: .5em;
 }
@@ -108,7 +118,7 @@ table.ownTable tbody tr td {
     color: black;
 } */
 
-.menu-link > span {
+.menu-link>span {
     color: black;
 }
 
@@ -119,22 +129,27 @@ table.ownTable thead th {
     text-align: center;
     min-width: 50px;
 }
+
 body {
-    background-color: transparent;/*#c7d3b4;*/
+    background-color: transparent;
+    /*#c7d3b4;*/
 }
+
 /* section{
 
     background: transparent;
 } */
 
- ul, li, .row {
+ul,
+li,
+.row {
 
     background: transparent;
 }
 
-table.ownTable tbody tr { 
+table.ownTable tbody tr {
     margin-top: 15px;
-    margin-bottom: 5px;    
+    margin-bottom: 5px;
 }
 
 
@@ -149,28 +164,44 @@ section#ext-menu {
     position: fixed;
 }
 
-div.container.action-bar{
+div.container.action-bar {
     margin: 0px 30px;
     padding: 0px 15px 0px;
 }
 
-#navbarNav > div /*> a > span*/ {
+#navbarNav>div
+
+/*> a > span*/
+    {
     /* text-align: center; */
     /* background-color: aqua; */
     text-align: center;
 }
+
 /* nav.navbarown {
     
     color: rgb(118,131,118) 
 } */
 
 nav div.mbr-table {
-    background-color:  rgb(118,131,118);
+    background-color: rgb(118, 131, 118);
 }
 
-p, li, a {
+p,
+li,
+a {
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-stretch: normal;
     color: black;
+}
+
+/* TÁBLA KÖZÉPRE IGAZÍTÁS TESZT */
+#div {
+    display: flex;
+    justify-content: center;
+}
+
+#table {
+    align-self: center;
 }

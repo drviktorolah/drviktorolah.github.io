@@ -95,9 +95,12 @@
     <!-- <section style="height: 100px;">
 
     </section> -->
+
+    
+
     <section id="ext_menu-0" data-rv-view="0">
 
-        <nav class="navbar navbar-dropdown navbar-fixed-top" style="background: #c7d3b4;">
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg" style="background: #c7d3b4;">
             <div class="container action-bar">
 
                 <div class="mbr-table" style="background: transparent;">
@@ -110,6 +113,52 @@
                                 <br>Szülész-Nőgyógyász szakorvos</a>
                         </div>
 
+                        <button onclick = 'showmenu();' class="navbar-toggler navbar-toggler-button border-0 ml-auto" type="button"
+                                        data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                                        aria-expanded="false"
+                                        style="text-align: center; color: white;font-weight: bold;font-family: sans-serif; padding-left: 15px;">
+                                        <a href="#xxx">
+                                            <span>Navigáció</span>
+                                            <i class="fas fa-bars text-white"></i>
+                                        </a>
+                                    </button>
+                                    <div class="collapse navbar-collapse menu text-uppercase cl-effect-5" id="navbarNav"
+                                        style="margin-right: 0.5rem;">
+                                        <div>
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                href="#idopont">
+                                                <!-- target="_blank" -->
+                                                <span data-hover="Előjegyzés">Előjegyzés</span>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                href="#bemutatkozas"><span
+                                                    data-hover="Bemutatkozás">Bemutatkozás</span></a>
+                                        </div>
+                                        <div>
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                href="#szolgaltatasok"><span
+                                                    data-hover="Szolgáltatások">Szolgáltatások</span></a>
+                                        </div>
+                                        <div>
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                href="#rendelesiido"><span data-hover="Rendelési idő">Rendelési
+                                                    idő</span></a>
+                                        </div>
+                                        <div>
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                href="#arlista"><span data-hover="Árlista">Árlista</span></a>
+                                        </div>
+                                        <div>
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                href="#galeria"><span data-hover="Galéria">Galéria</span></a>
+                                        </div>
+                                        <div>
+                                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                                href="#kapcsolat"><span data-hover="Kapcsolat">Kapcsolat</span></a>
+                                        </div>
+                                    </div>
                     </div>
                 </div>
             </div>
@@ -214,10 +263,10 @@
                                     style="text-align: center; color: white;font-weight: bold;font-family: sans-serif; padding-left: 15px;"
                                     data-hover="Bemutatkozás">Bemutatkozás</span></a> -->
 
-                        <div class="main-menu" style="padding-right : 5px;background:transparent;">
+                        <!-- <div class="main-menu" style="padding-right : 5px;background:transparent;">
                             <div class="container" style="background:transparent;">
                                 <nav class="navbar navbar-light" style="background: #c7d3b4; max-width: 300px;">
-                                    <!-- navbar-expand-lg -->
+                                    
                                     <button class="navbar-toggler navbar-toggler-button border-0 ml-auto" type="button"
                                         data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                                         aria-expanded="false"
@@ -232,7 +281,7 @@
                                         <div>
                                             <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
                                                 href="#idopont">
-                                                <!-- target="_blank" -->
+                                    
                                                 <span data-hover="Előjegyzés">Előjegyzés</span>
                                             </a>
                                         </div>
@@ -266,7 +315,7 @@
                                     </div>
                                 </nav>
                             </div>
-                        </div>
+                        </div> -->
                         <!-- </div> -->
                     </div>
                 </div>
@@ -382,7 +431,7 @@
             <div class="row">
                 <div id="rendelesiido" class="col-12 col-md-4 mb-5 mb-md-0" style="padding-top: 3rem;">
                     <div class="services-section-list" data-title="Rendelés">
-                        <table class="ownTable" style="margin: 15px;">
+                        <table class="ownTable" style="margin: 15px auto; ">
                             <thead>
                                 <th></th>
                                 <th>de</th>
@@ -402,9 +451,9 @@
                         </table>
                     </div>
                 </div>
-                <div id="arlista" class="col-12 col-md-8" style="padding-top: 3rem;">
+                <div id="arlista" class="col-11 col-md-7" style="padding-top: 3rem;">
                     <div class="services-section-list" data-title="Árlista">
-                        <table class="ownTable" style="margin: 15px;">
+                        <table class="ownTable" style="margin: 15px auto; ">
                             <thead>
                                 <th>Kezelés</th>
                                 <th> Díj</th>
@@ -641,6 +690,7 @@
     <script src="csfForrasokMentese/assets/theme/js/script.js"></script>
     <script src="csfForrasokMentese/assets/mobirise-gallery/player.min.js"></script>
     <script src="csfForrasokMentese/assets/mobirise-gallery/script.js"></script>
+    <script src="js/own_js.js"></script>
 
 </body>
 
