@@ -205,3 +205,8 @@ a {
 #table {
     align-self: center;
 }
+
+.modal-dialog {
+    max-width: fit-content;
+    margin: auto;
+  }
