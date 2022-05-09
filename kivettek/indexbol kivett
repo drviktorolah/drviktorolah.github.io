@@ -1,0 +1,86 @@
+<!-- <div class="collapse navbar-collapse menu text-uppercase cl-effect-5" id="navbarNav"
+                            style="margin-right: 0.5rem; margin-bottom: 5px;">
+                            <div>
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                    href="#idopont">Előjegyzés
+                              
+                                </a>
+                            </div>
+                            <div>
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                    href="#bemutatkozas">Bemutatkozás</a>
+                            </div>
+                            <div>
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                    href="#szolgaltatasok">Szolgáltatások</a>
+                            </div>
+                            <div>
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                    href="#rendelesiido">Rendelési idő</a>
+
+                            </div>
+                            <div>
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                    href="#arlista">Árlista</a>
+
+                            </div>
+                            <div>
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                    href="#galeria">Galéria</a>
+
+                            </div>
+                            <div>
+                                <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                    href="#kapcsolat">Kapcsolat</a>
+
+                            </div>
+                        </div> -->
+
+                        <!-- <section style="height: 100px;">-->
+
+
+    <!-- <header>
+            <div class="navbar-brand" style="background: transparent;">
+                <a href="index.html" class="navbar-logo"><img src="img/icon/mainIcon.png"
+                        style="height: 50px; width: 50px;" alt="Logo"></a>
+                <a class="navbar-caption text-white" id="title" href="index.html">Dr. Oláh Viktor
+                    <br>Szülész-Nőgyógyász szakorvos</a>
+            </div>
+            <nav>
+                <a href="#menu">Menü</a>
+            </nav>
+        </header>
+
+        <nav id="menu">
+            <ul class="links">
+                <li>
+                    <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" href="#idopont">Előjegyzés
+                       
+                       
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                        href="#bemutatkozas">Bemutatkozás</a>
+                </li>
+                <li>
+                    <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                        href="#szolgaltatasok">Szolgáltatások</a>
+                </li>
+                <li>
+                    <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                        href="#rendelesiido">Rendelési
+                        idő</a>
+                </li>
+                <li>
+                    <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" href="#arlista">Árlista</a>
+                </li>
+                <li> <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" href="#galeria">Galéria</a>
+
+                </li>
+                <li>
+                    <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                        href="#kapcsolat">Kapcsolat</a>
+                </li>
+            </ul>
+        </nav> -->
