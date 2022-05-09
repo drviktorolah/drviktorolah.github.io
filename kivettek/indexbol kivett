@@ -84,3 +84,48 @@
                 </li>
             </ul>
         </nav> -->
+
+        <!-- <header>
+                    <div class="navbar-brand" style="background: transparent;">
+                        <a href="index.html" class="navbar-logo"><img src="img/icon/mainIcon.png"
+                                style="height: 50px; width: 50px;" alt="Logo"></a>
+                        <a class="navbar-caption text-white" id="title" href="index.html">Dr. Oláh Viktor
+                            <br>Szülész-Nőgyógyász szakorvos</a>
+                            <nav>
+                                <a href="#menu">Menü</a>
+                            </nav>
+                    </div>
+                </header>
+                <nav id="menu">
+                    <ul class="links">
+                        <li>
+                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" href="#idopont">Előjegyzés
+                               
+                               
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                href="#bemutatkozas">Bemutatkozás</a>
+                        </li>
+                        <li>
+                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                href="#szolgaltatasok">Szolgáltatások</a>
+                        </li>
+                        <li>
+                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                href="#rendelesiido">Rendelési
+                                idő</a>
+                        </li>
+                        <li>
+                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" href="#arlista">Árlista</a>
+                        </li>
+                        <li> <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left" href="#galeria">Galéria</a>
+        
+                        </li>
+                        <li>
+                            <a class="menu-link my-1 d-block d-lg-inline text-center text-lg-left"
+                                href="#kapcsolat">Kapcsolat</a>
+                        </li>
+                    </ul>
+                </nav> -->
