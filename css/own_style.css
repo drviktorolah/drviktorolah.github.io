@@ -60,7 +60,8 @@ header>div.main-menu {
 }
 
 #title {
-    min-width: 250px;
+    min-width: 180px;
+    margin-left: 2px;
 }
 
 section.own-top {
@@ -193,6 +194,7 @@ a {
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-stretch: normal;
+    
     color: black;
 }
 
@@ -210,7 +212,11 @@ a {
     max-width: fit-content;
     margin: auto;
   }
-
+a.nav-link.link {
+    font-size: small;
+    margin-left: 2px;
+    margin-right: 0px;
+}
   /* https://stackoverflow.com/questions/45998699/making-navbar-collapse-with-js?msclkid=125512aecefe11ec9d77122afa14f196 */
   /* #navbarNav > div{
       display:block;
