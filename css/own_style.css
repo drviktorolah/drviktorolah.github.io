@@ -222,6 +222,37 @@ a.nav-link.link {
 a.nav-link.link:hover{
     text-decoration: underline;
 }
+
+
+@media (min-width:1300px) {
+    .container {
+        max-width: 1260px;        
+    }
+}
+
+@media (min-width:1400px) {
+    .container {
+        max-width: 1360px;        
+    }
+}
+
+@media (min-width:1500px) {
+    .container {
+        max-width: 1460px;        
+    }
+}
+
+@media (min-width:1600px) {
+    .container {
+        max-width: 1560px;        
+    }
+}
+
+@media (min-width:1650px) {
+    .container {
+        max-width: 1610px;        
+    }
+}
   /* https://stackoverflow.com/questions/45998699/making-navbar-collapse-with-js?msclkid=125512aecefe11ec9d77122afa14f196 */
   /* #navbarNav > div{
       display:block;
