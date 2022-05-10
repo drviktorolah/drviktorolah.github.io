@@ -214,8 +214,13 @@ a {
   }
 a.nav-link.link {
     font-size: small;
-    margin-left: 2px;
+    margin-left: 4px;
     margin-right: 0px;
+    
+}
+
+a.nav-link.link:hover{
+    text-decoration: underline;
 }
   /* https://stackoverflow.com/questions/45998699/making-navbar-collapse-with-js?msclkid=125512aecefe11ec9d77122afa14f196 */
   /* #navbarNav > div{
