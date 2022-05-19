@@ -2,7 +2,7 @@
     /* MAIN COLORS */
      --main-color: #fff5d2;
     /* #878586; */
-    --dark-main-color: #3b3b3b;
+    /*--dark-main-color: #3b3b3b;*/
     --second-color: #fff5d2
 }
 
@@ -209,7 +209,7 @@ a {
 /* =============== FOOTER =============== */
 
 footer {
-    background: var(--dark-main-color);
+    /*background: var(--dark-main-color);*/
     text-align: center;
 }
 
