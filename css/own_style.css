@@ -254,10 +254,9 @@ a.nav-link.link:hover{
     }
 }
 
-ul.center > li {
-    padding-left: 20%;
-    /* color:yellow; */
-}
+/*ul.center > li {
+    padding-left: 20%; 
+}  */
   /* https://stackoverflow.com/questions/45998699/making-navbar-collapse-with-js?msclkid=125512aecefe11ec9d77122afa14f196 */
   /* #navbarNav > div{
       display:block;
