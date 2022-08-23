@@ -1,5 +1,6 @@
 // JavaScript
 /** code by webdevtrick ( https://webdevtrick.com ) **/
+var daynum = 0;
 var month = [
  "January",
  "February",
@@ -134,10 +135,12 @@ function initCalender(monthData) {
  $(".right-wrapper .month").html(value.date.month);
  }
  var endDate = (new Date()).addDays(16);
- if (today.getDate() < value.date.date_info.getDate()
- && value.date.date_info.getDate() < endDate )
+
+ if (today.getTime() < value.date.date_info.getTime()
+&& value.date.date_info.getTime() < endDate.getTime() )
  {
        classToAdd = "selectable"; 
+       daynum++;
  }
  $("tr.weedays th").each(function () {
  var row = $(this);
