@@ -103,7 +103,13 @@ function clearCalender() {
  });
  clickCounter = 0;
 }
- 
+
+Date.prototype.addDays = function(days) {
+       var date = new Date(this.valueOf());
+       date.setDate(date.getDate() + days);
+       return date;
+   }
+
 function initCalender(monthData) {
  var row = 0;
  var classToAdd = "";
@@ -127,9 +133,11 @@ function initCalender(monthData) {
  $(".right-wrapper .day").html(value.date.day);
  $(".right-wrapper .month").html(value.date.month);
  }
- if (today.getTime() < value.date.date_info.getTime()) {
- classToAdd = "selectable";
- 
+ var endDate = (new Date()).addDays(16);
+ if (today.getDate() < value.date.date_info.getDate()
+ && value.date.date_info.getDate() < endDate )
+ {
+       classToAdd = "selectable"; 
  }
  $("tr.weedays th").each(function () {
  var row = $(this);
