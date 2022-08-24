@@ -1,6 +1,5 @@
 // JavaScript
 /** code by webdevtrick ( https://webdevtrick.com ) **/
-var daynum = 0;
 var month = [
  "January",
  "February",
@@ -81,6 +80,7 @@ function getMonth(currentDay) {
  weekday: weekday[tomorrow.getDay()],
  weekday_short: weekdayShort[tomorrow.getDay()],
  day: tomorrow.getDate(),
+ dayIdx: tomorrow.getDay(),
  month: month[tomorrow.getMonth()],
  year: tomorrow.getFullYear(),
  current_day: now.isSameDateAs(tomorrow) ? true : false,
@@ -127,21 +127,30 @@ function initCalender(monthData) {
  
  $(".sideb .header .month").html(value.date.month);
  $(".sideb .header .year").html(value.date.year);
- if (value.date.current_day) {
- currentDay = "currentDay";
-        classToAdd = "selectable";
- $(".right-wrapper .header span").html(value.date.weekday);
- $(".right-wrapper .day").html(value.date.day);
- $(".right-wrapper .month").html(value.date.month);
- }
- var endDate = (new Date()).addDays(16);
+ 
+ var endDate = (new Date()).addDays(15);
 
  if (today.getTime() < value.date.date_info.getTime()
 && value.date.date_info.getTime() < endDate.getTime() )
- {
-       classToAdd = "selectable"; 
-       daynum++;
+ {       
+       if([1,5].indexOf(value.date.dayIdx)>-1)
+       {
+       classToAdd = "selectable";     
+       }
+       else classToAdd = "";
  }
+else if (value.date.current_day) {
+       if([1,5].indexOf(value.date.dayIdx)>-1)
+       {
+       classToAdd = "selectable";     
+       }
+       currentDay = "currentDay";
+       $(".right-wrapper .header span").html(value.date.weekday);
+       $(".right-wrapper .day").html(value.date.day);
+       $(".right-wrapper .month").html(value.date.month);
+       }
+       else {classToAdd = "";}
+
  $("tr.weedays th").each(function () {
  var row = $(this);
  if (row.data("weekday") === weekday) {
