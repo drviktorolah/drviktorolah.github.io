@@ -38,7 +38,34 @@ var weekdayShort = [
 ];
 var monthDirection = 0;
  
-$(document).on('click', '#chooseDays', function () {        
+$(document).on('click', '#chooseDays', function () {    
+      var i =0;
+      $("td.selectable").each(function (t) {
+            i++;
+            var ul = document.getElementById("napok");
+
+//for (var i = 0; i < names.length; i++) {
+//    var name = names[i];
+    var li = document.createElement('li');
+    //var h = monthArr[0].date.month;
+    li.appendChild(document.createTextNode(/*name*/' '+ i+'.nap'));
+//     + t.html+' '
+    ul.appendChild(li);
+//}
+      })
+      getNextMonth();
+      $("td.selectable").each(function () {
+            i++;
+            var ul = document.getElementById("napok");
+
+//for (var i = 0; i < names.length; i++) {
+//    var name = names[i];
+    var li = document.createElement('li');
+    li.appendChild(document.createTextNode(/*namemonthArr[0].date.month+*/' '+i+'.nap'));
+    ul.appendChild(li);
+      })
+      getPrevMonth();
+      ;
       //from today.getTime() while day before today + interval -> get days by threatingDaysIdx)
   });
 
