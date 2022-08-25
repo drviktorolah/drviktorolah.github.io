@@ -1,5 +1,9 @@
 // JavaScript
 /** code by webdevtrick ( https://webdevtrick.com ) **/
+var threatingDaysIdx = [
+      1,4,5
+];
+var interval = 15;
 var month = [
  "January",
  "February",
@@ -34,6 +38,10 @@ var weekdayShort = [
 ];
 var monthDirection = 0;
  
+$(document).on('click', '#chooseDays', function () {        
+      //from today.getTime() while day before today + interval -> get days by threatingDaysIdx)
+  });
+
 function getNextMonth() {
  monthDirection++;
  var current;
@@ -128,19 +136,19 @@ function initCalender(monthData) {
  $(".sideb .header .month").html(value.date.month);
  $(".sideb .header .year").html(value.date.year);
  
- var endDate = (new Date()).addDays(15);
+ var endDate = (new Date()).addDays(interval);
 
  if (today.getTime() < value.date.date_info.getTime()
 && value.date.date_info.getTime() < endDate.getTime() )
  {       
-       if([1,5].indexOf(value.date.dayIdx)>-1)
+       if(threatingDaysIdx.includes(value.date.dayIdx))
        {
        classToAdd = "selectable";     
        }
        else classToAdd = "";
  }
 else if (value.date.current_day) {
-       if([1,5].indexOf(value.date.dayIdx)>-1)
+       if(threatingDaysIdx.includes(value.date.dayIdx))
        {
        classToAdd = "selectable";     
        }
@@ -149,7 +157,7 @@ else if (value.date.current_day) {
        $(".right-wrapper .day").html(value.date.day);
        $(".right-wrapper .month").html(value.date.month);
        }
-       else {classToAdd = "";}
+else {classToAdd = "";}
 
  $("tr.weedays th").each(function () {
  var row = $(this);
