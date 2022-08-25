@@ -3,6 +3,7 @@
 var threatingDaysIdx = [
       1,4,5
 ];
+
 var interval = 15;
 var month = [
  "January",
