@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="selectableIntervals" style="height: 30px; width: 200px;">
+            Időpontok
+        </button>
+        <ul id="listam">
+
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    "use strict";
+
+    $(document).on('click', '#selectableIntervals', function () {
+    x = 6.23; 
+    document.getElementById("listam").appendChild(document.createElement("li"))   
+    }
+</script>
+
+
+// <!-- $(document).on('click', '#chooseDays', function () {    
+//     var i =0;
+//     $("td.selectable").each(function (t) {
+//           i++;
+//           var ul = document.getElementById("napok");
+
+// //for (var i = 0; i < names.length; i++) {
+// //    var name = names[i];
+//   var li = document.createElement('li');
+//   //var h = monthArr[0].date.month;
+//   li.appendChild(document.createTextNode(/*name*/' '+ i+'.nap'));
+// //     + t.html+' '
+//   ul.appendChild(li);
+// //}
+//     })
+//     getNextMonth();
+//     $("td.selectable").each(function () {
+//           i++;
+//           var ul = document.getElementById("napok");
+
+// //for (var i = 0; i < names.length; i++) {
+// //    var name = names[i];
+//   var li = document.createElement('li');
+//   li.appendChild(document.createTextNode(/*namemonthArr[0].date.month+*/' '+i+'.nap'));
+//   ul.appendChild(li);
+//     })
+//     getPrevMonth();
+//     ;
+//     //from today.getTime() while day before today + interval -> get days by threatingDaysIdx)
+// }); -->
