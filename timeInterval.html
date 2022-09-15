@@ -20,10 +20,37 @@
 <script>
     "use strict";
 
-    $(document).on('click', '#selectableIntervals', function () {
-    x = 6.23; 
-    document.getElementById("listam").appendChild(document.createElement("li"))   
+    function getTimeString(i) {
+        return String(Math.floor(i/60)).padStart(2,' ')+':'+String(i%60).padStart(2,'0');
     }
+
+    const array = [7*60,7*60+20,7*60+40,8*60,8*60+20];
+    const array2 = array.map(a=>a+20);
+    var dateIntervals = [];
+    for(var i=0; i<array.length; i++)
+    {
+        console.log(getTimeString(array[i]));
+        console.log(dateIntervals);
+        dateIntervals.push({title: getTimeString(array[i]) + " - "+getTimeString(array2[i]), isFree: true});
+    }
+
+
+
+    //const sumOfArray = array.reduce((prev,curr) => prev + curr);
+    console.log(dateIntervals);
+
+    dateIntervals.forEach(item => {
+        let listItem = document.createElement("li");
+        listItem.innerText = item.title + String(item.isFree).padStart(50,'_');//String(Math.floor(item/60)).padStart(2,' ')+':'+String(item%60).padStart(2,'0');
+        //listItem.textContent - maga a szöveg - filter
+        document.getElementById("listam").appendChild(listItem);
+    })
+    //document.querySelectorAll(#ffff li[data-price])
+
+    // $(document).on('click', '#selectableIntervals', function () {
+    // x = 6.23; 
+    // document.getElementById("listam").appendChild(document.createElement("li"))   
+    // }
 </script>
 
 
