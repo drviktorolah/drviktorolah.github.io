@@ -25,3 +25,17 @@ Kerestem egy olyan megoldást, amely gyors, kényelmes és nem megterhelő módo
                             Szeretnénk egy kis nyitási akcióval kedveskedi Önöknek, így az első hónapban minden
                             vizsgálat árából <b>20% árengedményt</b> biztosítok.
                         </p>
+<!-- https://html5-tutorial.net/tables/changing-column-width/ -->
+                                <!-- <tr><td colspan="3"><b>Szeptember 2-ig</b></td></tr> -->
+                                <tr>
+                                    <td>Hétfő: </td>
+                                    <td> 7:00 - 10:00 </td>
+                                </tr>
+                                <tr>
+                                    <td>Péntek: </td>
+                                    <td> 8:00 - 11:00 </td>
+                                    <td> 15:00 - 18:00 </td>
+                                </tr>
+                                <!-- Hétfő       7-10 óra    14-17 óra<br/>
+                                Csütörtök   7-10 óra<br/>
+                                Péntek      7-10 óra    14-17 óra<br/> -->

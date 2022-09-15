@@ -22,24 +22,37 @@
 </body>
 </html>
 <style>
+    button.choose{
+        /* background-color: brown; */
+        /* width: 100px; */
+        padding: auto;
+        border-radius: 5%;
+        border: 1px solid;
+    }
     button.freeTime {
-        color: green;
-        height: 60px;
+        background-color: green;
+        /* height: 30px; */
+        text-align: center;       
     } 
     button.reserved{
-        color:gray;
-        height: 60px;
+        background-color:blueviolet;
+        /* height: 30px; */
+        text-align: center;
     }
 </style>
 <script>
     "use strict";
 
     function getTimeString(i) {
-        return String(Math.floor(i/60)).padStart(2,' ')+':'+String(i%60).padStart(2,'0');
+        return String(Math.floor(i/60)).padStart(2,'0')+':'+String(i%60).padStart(2,'0');
+    }
+
+    function arrayStep(start, end, step) {
+        return Array(Math.floor(end - start)/step).fill().map((_, idx) => start + idx*step);
     }
 
     //("#actSelectDate").innerText ='2022-12-23';
-    const array = [7*60,7*60+20,7*60+40,8*60,8*60+20];
+    const array = arrayStep(7*60,10*60,20)//[7*60,7*60+20,7*60+40,8*60,8*60+20];
     const array2 = array.map(a=>a+20);
     var dateIntervals = [];
     for(var i=0; i<array.length; i++)
@@ -54,23 +67,29 @@
     //const sumOfArray = array.reduce((prev,curr) => prev + curr);
     console.log(dateIntervals);
 
-    dateIntervals.forEach(item => {
+    /*dateIntervals.forEach(item => {
         let listItem = document.createElement("li");
         listItem.innerText = item.title + String(item.isFree).padStart(50,'_');//String(Math.floor(item/60)).padStart(2,' ')+':'+String(item%60).padStart(2,'0');
         //listItem.textContent - maga a szöveg - filter
         document.getElementById("listam").appendChild(listItem);
-    })
+    })*/
     dateIntervals.forEach(item => {
         let outerDiv = document.createElement("div");
         //outerDiv.style.justifyContent = "between";
         let innerDiv1 = document.createElement("span");
         innerDiv1.innerText = item.title;
-        let innerDiv2 = document.createElement("button");
-        innerDiv2.title = item.isFree ? "Foglalás" :"Foglalt";
-        innerDiv2.addClass(item.isFree ? "freeTime" : "reserved");
+        let btn = document.createElement("button");
+        btn.textContent = item.isFree ? "Foglalás" :"Foglalt";
+        btn.setAttribute("class",((item.isFree === true) ? "freeTime" : "reserved")+" choose");
+        btn.setAttribute("title","sadfdaffdsa");
+        //btn.setAttribute("id", "btn_id");
+//btn.setAttribute("class", "btn_class");
+//btn.setAttribute("width", "250px");
+btn.setAttribute("data-comma-delimited-array", "one,two,three,four");
+//btn.setAttribute("anything-random", document.getElementsByTagName("img").length);
         //.setAttribute("backcolor", item.isFree ? "green" : "gray");
         //innerDiv2.style(height).setAttribute("height", '60px');
-        outerDiv.append(innerDiv1,innerDiv2);
+        outerDiv.append(innerDiv1,btn);
         document.getElementById("listam").appendChild(outerDiv);//document.createElement("div")/*.innerHTML= item.title*/);
     })
     //https://www.mszn.hu/#booking-appointments
