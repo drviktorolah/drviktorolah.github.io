@@ -67,10 +67,10 @@
         innerDiv1.innerText = item.title;
         let innerDiv2 = document.createElement("button");
         innerDiv2.title = item.isFree ? "Foglalás" :"Foglalt";
-        innerDiv2.addClass(item.isFree ? "freeTime" : "reserved")
+        innerDiv2.addClass(item.isFree ? "freeTime" : "reserved");
         //.setAttribute("backcolor", item.isFree ? "green" : "gray");
         //innerDiv2.style(height).setAttribute("height", '60px');
-        outerDiv.append(innerDiv1,innerDiv2)
+        outerDiv.append(innerDiv1,innerDiv2);
         document.getElementById("listam").appendChild(outerDiv);//document.createElement("div")/*.innerHTML= item.title*/);
     })
     //https://www.mszn.hu/#booking-appointments
