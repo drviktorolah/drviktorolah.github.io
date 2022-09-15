@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="selectableIntervals" style="height: 30px; width: 200px;">
+            Időpontok
+        </button>
+        <div> 
+            <span>Választott dátum:</span>
+            <span id="actSelectDate"></span>
+        </div>
+        <ul id="listam">
+
+        </ul>
+    </div>
+</body>
+</html>
+<style>
+    button.freeTime {
+        color: green;
+        height: 60px;
+    } 
+    button.reserved{
+        color:gray;
+        height: 60px;
+    }
+</style>
+<script>
+    "use strict";
+
+    function getTimeString(i) {
+        return String(Math.floor(i/60)).padStart(2,' ')+':'+String(i%60).padStart(2,'0');
+    }
+
+    //("#actSelectDate").innerText ='2022-12-23';
+    const array = [7*60,7*60+20,7*60+40,8*60,8*60+20];
+    const array2 = array.map(a=>a+20);
+    var dateIntervals = [];
+    for(var i=0; i<array.length; i++)
+    {
+        console.log(getTimeString(array[i]));
+        console.log(dateIntervals);
+        dateIntervals.push({title: getTimeString(array[i]) + " - "+getTimeString(array2[i]), isFree: i%2 == true});
+    }
+
+
+
+    //const sumOfArray = array.reduce((prev,curr) => prev + curr);
+    console.log(dateIntervals);
+
+    dateIntervals.forEach(item => {
+        let listItem = document.createElement("li");
+        listItem.innerText = item.title + String(item.isFree).padStart(50,'_');//String(Math.floor(item/60)).padStart(2,' ')+':'+String(item%60).padStart(2,'0');
+        //listItem.textContent - maga a szöveg - filter
+        document.getElementById("listam").appendChild(listItem);
+    })
+    dateIntervals.forEach(item => {
+        let outerDiv = document.createElement("div");
+        //outerDiv.style.justifyContent = "between";
+        let innerDiv1 = document.createElement("span");
+        innerDiv1.innerText = item.title;
+        let innerDiv2 = document.createElement("button");
+        innerDiv2.title = item.isFree ? "Foglalás" :"Foglalt";
+        innerDiv2.addClass(item.isFree ? "freeTime" : "reserved");
+        //.setAttribute("backcolor", item.isFree ? "green" : "gray");
+        //innerDiv2.style(height).setAttribute("height", '60px');
+        outerDiv.append(innerDiv1,innerDiv2);
+        document.getElementById("listam").appendChild(outerDiv);//document.createElement("div")/*.innerHTML= item.title*/);
+    })
+    //https://www.mszn.hu/#booking-appointments
+    //div, span, justify-content-between  aligns-items-center
+    //document.querySelectorAll(#ffff li[data-price])
+
+    // $(document).on('click', '#selectableIntervals', function () {
+    // x = 6.23; 
+    // document.getElementById("listam").appendChild(document.createElement("li"))   
+    // }
+</script>
+
+
+// <!-- $(document).on('click', '#chooseDays', function () {    
+//     var i =0;
+//     $("td.selectable").each(function (t) {
+//           i++;
+//           var ul = document.getElementById("napok");
+
+// //for (var i = 0; i < names.length; i++) {
+// //    var name = names[i];
+//   var li = document.createElement('li');
+//   //var h = monthArr[0].date.month;
+//   li.appendChild(document.createTextNode(/*name*/' '+ i+'.nap'));
+// //     + t.html+' '
+//   ul.appendChild(li);
+// //}
+//     })
+//     getNextMonth();
+//     $("td.selectable").each(function () {
+//           i++;
+//           var ul = document.getElementById("napok");
+
+// //for (var i = 0; i < names.length; i++) {
+// //    var name = names[i];
+//   var li = document.createElement('li');
+//   li.appendChild(document.createTextNode(/*namemonthArr[0].date.month+*/' '+i+'.nap'));
+//   ul.appendChild(li);
+//     })
+//     getPrevMonth();
+//     ;
+//     //from today.getTime() while day before today + interval -> get days by threatingDaysIdx)
+// }); -->

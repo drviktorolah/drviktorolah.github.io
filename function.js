@@ -1,5 +1,10 @@
 // JavaScript
 /** code by webdevtrick ( https://webdevtrick.com ) **/
+var threatingDaysIdx = [
+      1,4,5
+];
+
+var interval = 15;
 var month = [
  "January",
  "February",
@@ -33,7 +38,56 @@ var weekdayShort = [
  "sat"
 ];
 var monthDirection = 0;
+
+var test=document.createElement('section');
+test.setAttribute('id','test');
+
+var ul=document.createElement('ul');
+
+
+document.body.appendChild(test);
+test.appendChild(ul);
+
+for (var i=0; i<array.length; i++){
+
+    var li=document.createElement('li');
+
+    ul.appendChild(li);
+    li.innerHTML=li.innerHTML + array[i];
+
+}
  
+$(document).on('click', '#chooseDays', function () {    
+      var i =0;
+      $("td.selectable").each(function (t) {
+            i++;
+            var ul = document.getElementById("napok");
+
+//for (var i = 0; i < names.length; i++) {
+//    var name = names[i];
+    var li = document.createElement('li');
+    //var h = monthArr[0].date.month;
+    li.appendChild(document.createTextNode(/*name*/' '+ i+'.nap'));
+//     + t.html+' '
+    ul.appendChild(li);
+//}
+      })
+      getNextMonth();
+      $("td.selectable").each(function () {
+            i++;
+            var ul = document.getElementById("napok");
+
+//for (var i = 0; i < names.length; i++) {
+//    var name = names[i];
+    var li = document.createElement('li');
+    li.appendChild(document.createTextNode(/*namemonthArr[0].date.month+*/' '+i+'.nap'));
+    ul.appendChild(li);
+      })
+      getPrevMonth();
+      ;
+      //from today.getTime() while day before today + interval -> get days by threatingDaysIdx)
+  });
+
 function getNextMonth() {
  monthDirection++;
  var current;
@@ -132,19 +186,19 @@ function initCalender(monthData) {
  $(".sideb .header .month").html(value.date.month);
  $(".sideb .header .year").html(value.date.year);
  
- var endDate = (new Date()).addDays(15);
+ var endDate = (new Date()).addDays(interval);
 
  if (today.getTime() < value.date.date_info.getTime()
 && value.date.date_info.getTime() < endDate.getTime() )
  {       
-       if([1,5].indexOf(value.date.dayIdx)>-1)
+       if(threatingDaysIdx.includes(value.date.dayIdx))
        {
        classToAdd = "selectable";     
        }
        else classToAdd = "";
  }
 else if (value.date.current_day) {
-       if([1,5].indexOf(value.date.dayIdx)>-1)
+       if(threatingDaysIdx.includes(value.date.dayIdx))
        {
        classToAdd = "selectable";     
        }
@@ -153,7 +207,7 @@ else if (value.date.current_day) {
        $(".right-wrapper .day").html(value.date.day);
        $(".right-wrapper .month").html(value.date.month);
        }
-       else {classToAdd = "";}
+else {classToAdd = "";}
 
  $("tr.weedays th").each(function () {
  var row = $(this);
