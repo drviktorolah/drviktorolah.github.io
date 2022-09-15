@@ -50,7 +50,7 @@
     function arrayStep(start, end, step) {
         return Array(Math.floor(end - start)/step).fill().map((_, idx) => start + idx*step);
     }
-
+//https://www.w3resource.com/javascript-exercises/javascript-array-exercise-41.php
     //("#actSelectDate").innerText ='2022-12-23';
     const array = arrayStep(7*60,10*60,20)//[7*60,7*60+20,7*60+40,8*60,8*60+20];
     const array2 = array.map(a=>a+20);
@@ -62,7 +62,11 @@
         dateIntervals.push({title: getTimeString(array[i]) + " - "+getTimeString(array2[i]), isFree: i%2 == true});
     }
 
-
+    function ReserveBtnClick() { console.log("clicked"); console.log(this);
+    this.setAttribute("class", "reserved choose");
+    this.textContent="Foglalt";
+    //btn.setAttribute("class",((item.isFree === true) ? "freeTime" : "reserved")+" choose");
+    };
 
     //const sumOfArray = array.reduce((prev,curr) => prev + curr);
     console.log(dateIntervals);
@@ -82,10 +86,11 @@
         btn.textContent = item.isFree ? "Foglalás" :"Foglalt";
         btn.setAttribute("class",((item.isFree === true) ? "freeTime" : "reserved")+" choose");
         btn.setAttribute("title","sadfdaffdsa");
-        //btn.setAttribute("id", "btn_id");
+        //btn.click = ;
+        btn.addEventListener("click", ReserveBtnClick);        //btn.setAttribute("id", "btn_id");
 //btn.setAttribute("class", "btn_class");
 //btn.setAttribute("width", "250px");
-btn.setAttribute("data-comma-delimited-array", "one,two,three,four");
+//btn.setAttribute("data-comma-delimited-array", "one,two,three,four");
 //btn.setAttribute("anything-random", document.getElementsByTagName("img").length);
         //.setAttribute("backcolor", item.isFree ? "green" : "gray");
         //innerDiv2.style(height).setAttribute("height", '60px');
