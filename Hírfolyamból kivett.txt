@@ -39,3 +39,32 @@ Kerestem egy olyan megoldást, amely gyors, kényelmes és nem megterhelő módo
                                 <!-- Hétfő       7-10 óra    14-17 óra<br/>
                                 Csütörtök   7-10 óra<br/>
                                 Péntek      7-10 óra    14-17 óra<br/> -->
+
+                                <p style="padding-left: 2%;padding-right: 2%;">
+                            <span><i>2022-08-18</i></span><br />
+                            Kedves Hölgyek, Kismamák!<br/>
+                            <br/>
+                            Szabadság miatt Szeptember 5-14 között a rendelés szünetel. Utolsó rendelési nap előtte Szeptember 2-án pénteken lesz. 
+                            <br/>
+                            A <b>szabadságot követően</b> a rendelési idő a következőképpen változik:
+                            <br/>
+                            
+                                         Hétfő       7-10 óra    14-17 óra<br/>
+                                         Csütörtök   7-10 óra<br/>
+                                         Péntek      7-10 óra    14-17 óra<br/>
+                            Megértésüket köszönöm!
+                            <br/>
+                            <br/>
+Gyakori kérdés, hogy mikor nyílnak meg az időpontok. A rendszer 15 nappal korábban teszi elérhetővé percre pontosan a következő szabad helyeket. 
+<br/>Példaként csütörtökön 16 órakor nyílik meg két hét múlva a péntek 16 órás időpont. 
+Természetesen a soron kívüli sürgős vizsgálat miatt telefonon és üzenetben is tudnak velem egyeztetni, igyekszem időben ellátni mindenkit.
+                            <br/><br/>
+                        </p>
+                        <!-- <p style="padding-left: 2%;padding-right: 2%;">
+                            <span><i>2022-08-01</i></span><br />
+                            Kedves Hölgyek, Kismamák!<br/><br/>                            
+                            Távollét miatt Augusztus 12-e (péntek) helyett a rendelés 10-én (szerda) történik 7-12 óra között. Megértésüket köszönöm!
+                            <br/>
+                            Üdvözlettel: Dr. Oláh Viktor
+                            <br/><br/>
+                        </p> -->
