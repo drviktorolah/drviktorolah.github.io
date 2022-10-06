@@ -156,13 +156,13 @@ a {
     display: list-item;
 }
 
-.services-section-list li:first-child {
+/* .services-section-list li:first-child {
     padding-top: 1.562em;
 }
 
 .services-section-list li:last-child {
     padding-bottom: 1.562em;
-}
+} */
 
 .services-section-list:before {
     background: var(--main-color);
