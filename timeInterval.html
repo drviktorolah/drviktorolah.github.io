@@ -13,11 +13,26 @@
         </button>
         <div> 
             <span>Választott dátum:</span>
-            <span id="actSelectDate"></span>
+            <div id="actSelectDate"></div>
         </div>
-        <ul id="listam">
+        <table id="listam">
+            <thead>
+                <tr>
+                    <th>
+                        Választott dátum:
+                    </th>
+                    <th id="actSelectDate">
 
-        </ul>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="listam">
+
+            </tbody>
+        </table>
+        <!-- <ul id="listam">
+
+        </ul> -->
     </div>
 </body>
 </html>
@@ -51,7 +66,7 @@
         return Array(Math.floor(end - start)/step).fill().map((_, idx) => start + idx*step);
     }
 //https://www.w3resource.com/javascript-exercises/javascript-array-exercise-41.php
-    //("#actSelectDate").innerText ='2022-12-23';
+    //("#actSelectDate").text ='2022-12-23';
     const array = arrayStep(7*60,10*60,20)//[7*60,7*60+20,7*60+40,8*60,8*60+20];
     const array2 = array.map(a=>a+20);
     var dateIntervals = [];
@@ -79,13 +94,15 @@
         document.getElementById("listam").appendChild(listItem);
     })*/
     dateIntervals.forEach(item => {
-        let outerDiv = document.createElement("div");
+        let outerDiv = document.createElement("tr");
         //outerDiv.style.justifyContent = "between";
-        let innerDiv1 = document.createElement("span");
+        let innerDiv1 = document.createElement("td");
         innerDiv1.innerText = item.title;
+        let innerDiv2 = document.createElement("td");
         let btn = document.createElement("button");
         btn.textContent = item.isFree ? "Foglalás" :"Foglalt";
         btn.setAttribute("class",((item.isFree === true) ? "freeTime" : "reserved")+" choose");
+        innerDiv2.appendChild(btn);
         //btn.setAttribute("title","sadfdaffdsa");
         //btn.click = ;
         if(item.isFree){
@@ -98,7 +115,8 @@
 //btn.setAttribute("anything-random", document.getElementsByTagName("img").length);
         //.setAttribute("backcolor", item.isFree ? "green" : "gray");
         //innerDiv2.style(height).setAttribute("height", '60px');
-        outerDiv.append(innerDiv1,btn);
+        outerDiv.appendChild(innerDiv1);//,btn);
+        outerDiv.appendChild(innerDiv2);
         document.getElementById("listam").appendChild(outerDiv);//document.createElement("div")/*.innerHTML= item.title*/);
     })
     //https://www.mszn.hu/#booking-appointments

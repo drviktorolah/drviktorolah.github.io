@@ -39,23 +39,23 @@ var weekdayShort = [
 ];
 var monthDirection = 0;
 
-var test=document.createElement('section');
-test.setAttribute('id','test');
+// var test=document.createElement('section');
+// test.setAttribute('id','test');
 
-var ul=document.createElement('ul');
+// var ul=document.createElement('ul');
 
 
-document.body.appendChild(test);
-test.appendChild(ul);
+// document.body.appendChild(test);
+// test.appendChild(ul);
 
-for (var i=0; i<array.length; i++){
+// for (var i=0; i<array.length; i++){
 
-    var li=document.createElement('li');
+//     var li=document.createElement('li');
 
-    ul.appendChild(li);
-    li.innerHTML=li.innerHTML + array[i];
+//     ul.appendChild(li);
+//     li.innerHTML=li.innerHTML + array[i];
 
-}
+// }
  
 $(document).on('click', '#chooseDays', function () {    
       var i =0;
