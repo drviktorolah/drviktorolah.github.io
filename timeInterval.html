@@ -59,12 +59,13 @@
     {
         console.log(getTimeString(array[i]));
         console.log(dateIntervals);
-        dateIntervals.push({title: getTimeString(array[i]) + " - "+getTimeString(array2[i]), isFree: i%2 == true});
+        dateIntervals.push({title: getTimeString(array[i]) + " - "+getTimeString(array2[i]), isFree: (i%3)*(i%2) == true});
     }
 
     function ReserveBtnClick() { console.log("clicked"); console.log(this);
     this.setAttribute("class", "reserved choose");
     this.textContent="Foglalt";
+    this.removeEventListener("click", ReserveBtnClick);
     //btn.setAttribute("class",((item.isFree === true) ? "freeTime" : "reserved")+" choose");
     };
 
@@ -85,9 +86,12 @@
         let btn = document.createElement("button");
         btn.textContent = item.isFree ? "Foglalás" :"Foglalt";
         btn.setAttribute("class",((item.isFree === true) ? "freeTime" : "reserved")+" choose");
-        btn.setAttribute("title","sadfdaffdsa");
+        //btn.setAttribute("title","sadfdaffdsa");
         //btn.click = ;
-        btn.addEventListener("click", ReserveBtnClick);        //btn.setAttribute("id", "btn_id");
+        if(item.isFree){
+            btn.addEventListener("click", ReserveBtnClick);        //btn.setAttribute("id", "btn_id");
+        }
+        
 //btn.setAttribute("class", "btn_class");
 //btn.setAttribute("width", "250px");
 //btn.setAttribute("data-comma-delimited-array", "one,two,three,four");
